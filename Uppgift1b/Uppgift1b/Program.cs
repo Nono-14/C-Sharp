@@ -36,7 +36,7 @@ namespace Uppgift1b
             l *= 2;
             //5. Avänd explicit konvertering för att tilldela variabel "i" värdet av "l"
             //Kod här
-            i = (int)l;
+            i = Convert.ToInt32(l);
 
             //6. Skriv ut värdet av variabeln i konsolen. Talet 22 bör skrivas ut
             //Kod här
@@ -48,7 +48,7 @@ namespace Uppgift1b
 
             //8. Använd explicit konvertering för att tilldela variabeln "d" värdet av variabeln "f"
             //Kod här
-            d = (decimal)f;
+            d = Convert.ToDecimal(f);
             //9. Använd dekrement operatorn för att subtrahera värdet av "d" med 1
             //Kod här
             d--;
@@ -58,8 +58,8 @@ namespace Uppgift1b
 
             //11. Använd explicit konvertering för att tilldela "i" värdet av "d" modulo 5 (restvärdet)
             //Kod här
-            i = (int)d % 5;
-
+            i = (int)d;
+            i = i % 5;
             //12. Skriv ut värdet av "i" i konsolen. Bör vara 1.
             //Kod här
             Console.WriteLine(i);
@@ -71,7 +71,6 @@ namespace Uppgift1b
             //och tilldela variabeln "b" värdet av variabeln "sant"
             //Kod här
             b = bool.Parse(sant);
-
             //15. Sätt variabel "b":s värde till falskt
             //Kod här
             sant = "false";
